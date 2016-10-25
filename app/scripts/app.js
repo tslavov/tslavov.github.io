@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('portfolioApp', ["ui.router"])
+  .module('portfolioApp', ['ui.router'])
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) { 
       $urlRouterProvider.otherwise('/projects');
 
