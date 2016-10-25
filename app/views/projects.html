@@ -1,4 +1,4 @@
-<section ng-controller="ProjectsCtrl" class="container">
+<section class="container">
     <article id="{{item.id}}" ng-repeat="item in projects" class="panel panel-default">
         <div class="panel-heading">            
             <h2 class="list-group-item-heading">
@@ -17,6 +17,10 @@
             <p class="list-group-item-text">
                 <h4>technologies</h4>{{item.technologies.join(", ")}}
             </p>            
+        </div>
+        <div ng-if="item.stackembed">
+            <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,3" href="{{item.stackembed}}"></a>
+            <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
         </div>
         <div class="panel-footer">
             <img class="img-thumbnail" ng-src="{{item.company_logo}}" alt="{{item.company}}" />

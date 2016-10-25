@@ -10,7 +10,8 @@
     "description": "server-client system integrating gene-compound relations bioactivity data",
     "responsibilities": [ "front end application development of functionality for several releases of the system, actively participating in design and implementation of server side functionality", "SEO", "implement highly interactive components using recent technologies (SVG, React, D3)", "functional specification and estimation" ],
     "technologies": [ "JavaScript (d3, React, q, jQuery, PhantomJS)", "HTML5", "CSS3", "C#", ".NET 4.0/Mono", "ADO.NET", "MS SQL", "ASP.NET", "Web Services", "TFS/Git", "IIS/Apache", "Windows Services", "XML", "JSON", "XSL", "Visual Studio 2015/Xamarin​" ],
-    "url": "http://drug2gene.com"
+    "url": "http://drug2gene.com",
+    "stackembed": "https://embed.stackshare.io/stacks/embed/8bbc6766a2af1ddea0fb9b60ec6438"
   },
   {
     "id": "1",
@@ -42,4 +43,4 @@
     "technologies": [],
     "url": "http://drug2gene.com"
   }
-]
+] 
