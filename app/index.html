@@ -2,8 +2,9 @@
 <html ng-app="portfolioApp">
   <head>
     <meta charset="utf-8">
-    <title ng-bind="title">TS's portfolio</title>
-    <meta name="description" content="">
+    <base href="/" />
+    <title ng-bind="$state.current.name"></title>
+    <meta name="description" content="Todor Slavov's portfolio">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -32,8 +33,6 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
-            <!--<a class="navbar-brand" href="#/">portfolio</a>-->
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -48,28 +47,23 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-        <div ui-view></div>
-    </div>
+    <div class="container" ui-view></div>
 
-    <div class="footer">
+    <div ng-show="$state.current.name == 'projects'" class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-leaf"></span> most of the showcased work were created while working under past and present full-time employer(s), who solely own the rights to these materials</p>
       </div>
     </div>
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-      <!--<script>
+    <script>
         !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
         (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
         r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
         }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-
-          ga('create', 'UA-86293204-1', 'auto');
-          ga('send', 'pageview');
-      </script>-->
+        
+        ga('create', 'UA-86293204-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

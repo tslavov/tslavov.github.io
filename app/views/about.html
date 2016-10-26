@@ -1,1 +1,23 @@
-<p>This is the about view.</p>
+<article class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="list-group-item-heading">
+            <img style="width:40px" class="img-circle img-thumbnail" ng-src="{{::item.image}}" alt="{{::item.name}}" />
+            <span>{{::item.name}}</span>
+        </h3>
+    </div>
+    <div class="panel-body list-group">        
+        <p class="list-group-item-text">
+            {{::item.description}}
+        </p>
+        <p class="list-group-item-text">
+            {{::item.responsibilities.join(". ")}}
+        </p>
+        <p class="list-group-item-text">
+            <h4>tech stack</h4>{{::item.technologies.join(", ")}}
+        </p>
+    </div>
+    <div ng-if="item.stackembed">
+        <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,2,3,4" href="{{::item.stackembed}}"></a>
+        <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
+    </div>
+</article>

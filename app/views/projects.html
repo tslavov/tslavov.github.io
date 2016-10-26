@@ -1,30 +1,28 @@
-<section class="container">
-    <article id="{{item.id}}" ng-repeat="item in projects" class="panel panel-default">
-        <div class="panel-heading">            
-            <h2 class="list-group-item-heading">
-                <img ng-src="{{item.logo}}" alt="{{item.name}}" />
-                <a target="_blank" href="{{item.url}}"> {{item.name}}</a>
-            </h2>            
-        </div>
-        <div class="panel-body list-group">
-            <img class="img-responsive" ng-src="{{item.image}}" alt="{{item.name}}" />
-            <p class="list-group-item-text">
-                <h4>project info</h4>{{item.description}}
-            </p>
-            <p class="list-group-item-text">
-                <h4>responsibilities</h4>{{item.responsibilities.join(", ")}}
-            </p>
-            <p class="list-group-item-text">
-                <h4>technologies</h4>{{item.technologies.join(", ")}}
-            </p>            
-        </div>
-        <div ng-if="item.stackembed">
-            <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,3" href="{{item.stackembed}}"></a>
-            <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
-        </div>
-        <div class="panel-footer">
-            <img class="img-thumbnail" ng-src="{{item.company_logo}}" alt="{{item.company}}" />
-            <a target="_blank" href="{{item.company_url}}"> {{item.company}}</a>  
-        </div>
-    </article>
-</section>
+<article id="{{::item.id}}" ng-repeat="item in projects" class="panel panel-default">
+    <div class="panel-heading">            
+        <h2 class="list-group-item-heading">
+            <img ng-src="{{::item.logo}}" alt="{{::item.name}}" />
+            <a target="_blank" href="{{::item.url}}"> {{::item.name}}</a>
+        </h2>            
+    </div>
+    <div class="panel-body list-group">
+        <img class="img-responsive" ng-src="{{::item.image}}" alt="{{::item.name}}" />
+        <p class="list-group-item-text">
+            <h4>project info</h4>{{::item.description}}
+        </p>
+        <p class="list-group-item-text">
+            <h4>responsibilities</h4>{{::item.responsibilities.join(", ")}}
+        </p>
+        <p class="list-group-item-text">
+            <h4>technologies</h4>{{::item.technologies.join(", ")}}
+        </p>            
+    </div>
+    <div ng-if="item.stackembed">
+        <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,3" href="{{::item.stackembed}}"></a>
+        <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
+    </div>
+    <div class="panel-footer">
+        <img class="img-thumbnail" ng-src="{{::item.company_logo}}" alt="{{::item.company}}" />
+        <a target="_blank" href="{{::item.company_url}}"> {{::item.company}}</a>  
+    </div>
+</article>

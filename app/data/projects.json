@@ -3,10 +3,10 @@
     "id": "0",
     "name": "drug2gene",
     "company": "metalife",
-    "company_logo": "http://metalife.com/favicon.ico",
+    "company_logo": "images/metalife.ico",
     "company_url": "http://metalife.com",
-    "logo": "http://drug2gene.info/favicon.ico",
-    "image": "/images/d2g.gif",
+    "logo": "images/drug2gene.ico",
+    "image": "images/d2g.gif",
     "description": "server-client system integrating gene-compound relations bioactivity data",
     "responsibilities": [ "front end application development of functionality for several releases of the system, actively participating in design and implementation of server side functionality", "SEO", "implement highly interactive components using recent technologies (SVG, React, D3)", "functional specification and estimation" ],
     "technologies": [ "JavaScript (d3, React, q, jQuery, PhantomJS)", "HTML5", "CSS3", "C#", ".NET 4.0/Mono", "ADO.NET", "MS SQL", "ASP.NET", "Web Services", "TFS/Git", "IIS/Apache", "Windows Services", "XML", "JSON", "XSL", "Visual Studio 2015/Xamarin​" ],
@@ -17,9 +17,9 @@
     "id": "1",
     "name": "phenomicdb",
     "company": "metalife",
-    "company_logo": "http://metalife.com/favicon.ico",
+    "company_logo": "images/metalife.ico",
     "company_url": "http://metalife.com",
-    "logo": "http://phenomicdb.de/favicon.ico",
+    "logo": "images/phenomicdb.ico",
     "image": "",
     "description": "online search engine integrating phenotypic databases",
     "responsibilities": [
@@ -34,13 +34,13 @@
     "id": "2",
     "name": "intertur",
     "company": "planeta-web",
-    "company_logo": "/images/planeta-web.png",
+    "company_logo": "images/planeta-web.png",
     "company_url": "https://www.linkedin.com/company/planeta-web",
     "logo": "http://intertur.co.uk/favicon.ico",
     "image": "",
     "description": "",
     "responsibilities": [ "" ],
     "technologies": [],
-    "url": "http://drug2gene.com"
+    "url": "http://intertur.com"
   }
 ] 

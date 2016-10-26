@@ -8,10 +8,9 @@
  * Controller of the portfolioApp
  */
 angular.module('portfolioApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function ($scope, $http) {
+      $http.get('data/about.json', { cache: true})
+         .then(function (result) {
+             $scope.item = result.data;
+         });
   });

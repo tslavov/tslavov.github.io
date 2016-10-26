@@ -9,8 +9,8 @@
  */
 angular.module('portfolioApp')
   .controller('ProjectsCtrl', function ($scope, $http) {
-      $http.get('projects.json')
-         .then(function (res) {
-             $scope.projects = res.data;
+      $http.get('data/projects.json', { cache: true})
+         .then(function (result) {
+             $scope.projects = result.data;
          });
   });
