@@ -1,0 +1,11 @@
+{
+  "name": "Todor Slavov",
+  "image": "images/avatar.jpg",
+  "description": "Full stack web developer with 7+ years experience with MS technologies (ASP.NET, C#, SQL) and excellent command of JavaSript, HTML, CSS",
+  "responsibilities": [
+    "Early adopter of new technologies having recent experience with trending JavaScript libraries like React, D3, q, loDash",
+    "Passionate about BigData, HTTP/2, MEAN stack"
+  ],
+  "technologies": [ "JavaScript (d3, React, q, jQuery, PhantomJS)", "HTML5", "CSS3", "C#", ".NET 4.0/Mono", "ADO.NET", "MS SQL", "ASP.NET", "Web Services", "TFS/Git", "IIS/Apache", "Windows Services", "XML", "JSON", "XSL", "Visual Studio 2015/Xamarin​" ],
+  "stackembed": "https://embed.stackshare.io/stacks/embed/a07723cbe9f91fbee59dd1b8c00b0f"
+}   
