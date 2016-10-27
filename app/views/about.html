@@ -16,7 +16,7 @@
             <h4>tech stack</h4>{{::item.technologies.join(", ")}}
         </p>
     </div>
-    <div ng-style="{'visibility': item.stackembed ? 'visible' : 'hidden'}">
+    <div ng-show="item.stackembed">
         <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,2,3,4" href="{{::item.stackembed}}"></a>
         <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
     </div>
