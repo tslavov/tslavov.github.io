@@ -1,19 +1,7 @@
-<article class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="list-group-item-heading">
-            <img style="width:40px" class="img-circle img-thumbnail" ng-src="{{::item.image}}" alt="{{::item.name}}" />
-            <span>{{::item.name}}</span>
-        </h3>
-    </div>
-    <div class="panel-body list-group">
-        <p class="list-group-item-text">
-            <a class="fa fa-envelope-square" href="mailto:{{::item.email}}" >e-mail</a>
-        </p>
-        <p class="list-group-item-text">
-            <a class="fa fa-linkedin-square" href="{{::item.linkedin}}">linkedin</a>
-        </p>
-        <p class="list-group-item-text">
-           <a class="fa fa-github-square" href="{{::item.github}}">github</a>
-        </p>
-    </div>
+<article class="panel text-center">
+    <a class="fa fa-envelope-square" href="mailto:{{::item.email}}" >e-mail</a>
+
+    <a class="fa fa-linkedin-square" href="{{::item.linkedin}}">linkedin</a>
+
+    <a class="fa fa-github-square" href="{{::item.github}}">github</a>
 </article>
