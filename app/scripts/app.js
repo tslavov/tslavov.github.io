@@ -10,11 +10,11 @@
  */
 angular
   .module('portfolioApp', ['ui.router'])
-  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
-      $urlRouterProvider.otherwise('/');
+  .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {//, '$locationProvider', $locationProvider
+      $urlRouterProvider.otherwise('/projects');
 
       $stateProvider.state('projects', {
-          url: '/',
+          url: '/projects',
           templateUrl: 'views/projects.html',
           controller: 'ProjectsCtrl as projects',
           name: 'projects'
@@ -31,7 +31,7 @@ angular
       });
 
       // use the HTML5 History API
-      $locationProvider.html5Mode(true);
+      //$locationProvider.html5Mode(true);
 
   }]).run(['$rootScope', '$state', '$stateParams',
     function ($rootScope, $state, $stateParams) {
